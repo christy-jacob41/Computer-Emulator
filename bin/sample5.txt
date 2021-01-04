@@ -1,0 +1,78 @@
+.0
+1 // load 9
+9
+16 // copy 9 to y
+1 // load * as an ASCII value
+42
+9 // print *
+2
+1 // load a space as an ASCII value
+32
+9 // print 2 spaces
+2
+9
+2
+1  // load 0
+0
+29 // print 0
+14 // copy 0 to x
+25 // increment x
+15 // copy x to ac
+29 // system call
+13 // subtract 9 from ac
+21 // if ac is 0 jump
+25 // jump address if ac is 0
+11 // add 9 to ac
+20 // jump to 17 to increment and print out the next 9 digits
+17
+
+1 // loading a newline as an ASCII value 
+10
+9 // print a newline
+2
+26 // decrement x 8 times
+26
+26
+26
+26
+26
+26
+26
+15 // copy value from x to ac
+1 // load 1 into ac
+1
+11 // add y to the ac
+16
+1
+19 // load 19 into the ac
+13 // subtract the value in y from the ac
+21 // jump address if ac is 0
+53 // address to jump to if ac is 0
+15 // load x into ac
+29 // print x twice
+29
+20 // jump to 17 to increment and print out the next 9 digits
+17
+
+50 // end program
+
+.1000
+30 // interrupt handler just returns
+
+.1500
+
+9 // print as an int to the screen
+1
+
+27   // Push ac onto stack
+
+1 // loading space as an ASCII value
+32
+9 // print two spaces 
+2
+9
+2
+
+28   // Pop ac from stack
+
+30 // IRet
